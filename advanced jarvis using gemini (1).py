@@ -4,8 +4,8 @@ import google.generativeai as genai
 import pyttsx3
 import pyaudio
 
-speaker = win32com.client.Dispatch("SAPI.spvoice")
-api_key =("YOUR_API_KEY HERE")
+speaker = win32com.client.Dispatch("sapi voice")  
+api_key =("AIzaSyCitX9wvUvoywPOKdNV4k1mGWtl7Xb1rtg")
 genai.configure(api_key=api_key)
 
 def speak(text):
@@ -34,7 +34,7 @@ def ask_jarvis(question):
 
 speak("hello, i am jarvis powered by GEMINI AI!")
 
-
+#listen for user input aand response the desired answer:
 while True:
     query = listen()
 
