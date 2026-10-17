@@ -127,6 +127,7 @@ def run_jarvis() -> None:
         elif "search" in command:
             query = command.replace("search", "").strip()
             webbrowser.open(f"https://google.com/search?q={query}")
+            
             speak(f"Searching for {query}")
  
         elif "system status" in command:
