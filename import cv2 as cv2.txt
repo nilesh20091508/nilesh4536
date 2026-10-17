@@ -1,0 +1,13 @@
+import cv2 as cv2
+
+cv.imread("photos/cat_large.jpg")
+
+#if else.... condition
+if the image is none:
+    print("image is found!")
+else:
+    print("the image is not found!")
+
+cv.imshow("cat",jpg)
+
+cv.waitkey(0)
