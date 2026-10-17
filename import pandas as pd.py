@@ -1,5 +1,8 @@
-import pandas as pd 
+import pandas as pd
 
-df = pd.read_csv("data.csv")
+df['timestamp'] =
+pd.to_datetime(df['timestamp'])
+df.set_index('timestamp' ,  inplace =True)
 
-print(df)
+df('Battery_avg') =10
+df['Battery_v'].rolling('9s').mean()
