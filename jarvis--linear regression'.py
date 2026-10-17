@@ -1,12 +1,11 @@
 import google.generativeai as genai
 import speech_recognition as sr
 import win32com.client
-import pyaudio
+#import pyaudio
 
 speaker = win32com.client.Dispatch("SAPI.spvoice")
 
 def speak(text):
-    speaker.speak(text)
     print("jarvis:", text)
     speaker.speak(text)
 
@@ -36,7 +35,7 @@ speak("hello boss , i am jarvis powered by GEMINI AI!")
 
 
 while True:
-    query = listen()
+    query = listen()  
 
     if query is None:
         continue
@@ -47,3 +46,13 @@ while True:
 
     answer = ask_jarvis(query)
     speak(answer)
+
+
+
+
+
+#MODULES USED:
+#gen ai
+#win 32 ("sapi voice")
+#voice recognition modules
+#traing module another similar using numpy and linear regression...
